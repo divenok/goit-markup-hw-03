@@ -68,6 +68,7 @@ img {
   font-size: 36px;
   line-height: var(--secondary-line-height);
   margin-bottom: 50px;
+  justify-content: center;
 }
 .section {
   padding-top: 94px;
@@ -213,7 +214,7 @@ margin-right: 50px;
 .team-item {
   background-color: #FFFFFF;
 }
-.team-list:not(:nth-child(4n)) {
+.team-item:not(:nth-child(4n)) {
 margin-right: 30px;
 }
 .name {
