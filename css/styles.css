@@ -25,6 +25,27 @@ body {
   letter-spacing: var(--primary-letter-spacing);
   color: var(--primary-text-color-theme-light);
   background-color: var(--primary-background-color);
+  
+}
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+.container {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .list {
   list-style: none;
@@ -32,38 +53,78 @@ body {
 .link {
   text-decoration: none;
 }
+
 /* ====== start components ====== */
 .logo {
   font-family: var(--secondary-font-family);
   font-weight: var(--secondary-font-weight);
   font-size: 26px;
   line-height: 1.19;
-
+  
   color: var(--accent-color);
 }
 .titel-cat {
   font-weight: var(--secondary-font-weight);
   font-size: 36px;
   line-height: var(--secondary-line-height);
+  margin-bottom: 50px;
 }
-
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.incognito {
+  opacity: 0;
+}
 /* ====== end components ====== */
 /* ====== start header ======= */
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.logo-header {
+  margin-right: 93px;
+}
 .logo-secondary-harf-header {
   color: var(--primary-text-color-theme-light);
 }
-
+.menu-nav-list {
+  display: flex;
+  align-items: center;
+}
+.menu-nav-item:not(:last-child) {
+  margin-right: 50px;
+} 
 .menu-nav-link {
   font-weight: var(--primary-font-weight);
   font-size: var(--primary-font-size);
   line-height: var(--primary-line-height);
   letter-spacing: 0.02em;
+
   color: var(--primary-text-color-theme-light);
 }
 .current,
 .menu-nav-link:hover,
 .menu-nav-link:focus {
   color: var(--accent-color);
+}
+.contacts-list {
+  display: flex;
+  align-items: center;
+}
+.contacts-list {
+  margin-left: auto;
+}
+.mail-header {
+margin-right: 50px;
 }
 .mail-header,
 .phone-namber-header {
@@ -100,6 +161,9 @@ body {
   font-size: var(--secondary-font-size);
   line-height: 1.88;
   letter-spacing: var(--secondary-letter-spacing);
+  min-width: 216px;
+  padding: 10px 20px;
+  border-radius: 4px;
   cursor: pointer;
   color: var(--primary-text-color-theme-dark);
   background-color: var(--accent-color);
@@ -108,15 +172,22 @@ body {
 /* ====== end hero ====== */
 /* ====== start work and features ====== */
 
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.features {
+  padding-top: 94px;
+}
 .features-title {
-font-family: var(--primary-font-family);
-font-style: normal;
-font-weight: var(--secondary-font-weight);
-font-size: var(--primary-line-height);
-line-height: 1.14;
-letter-spacing: var(--primary-letter-spacing);
-text-transform: uppercase;
-color: var(--primary-text-color-theme-light);
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: var(--secondary-font-weight);
+  font-size: var(--primary-line-height);
+  line-height: 1.14;
+  letter-spacing: var(--primary-letter-spacing);
+  text-transform: uppercase;
+  color: var(--primary-text-color-theme-light);
 }
 
 .descr-features {
@@ -127,23 +198,32 @@ color: var(--primary-text-color-theme-light);
 
 /* ====== start team ====== */
 .team {
+  
   font-weight: var(--primary-font-weight);
   font-size: var(--secondary-font-size);
   line-height: 1.19;
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--tertiary-background-color);
 }
+.team-list{
+  display: flex;
+  flex-wrap: wrap;
+}
 .team-item {
-  background-color: var(--primary-text-color-theme-dark);
+  background-color: #FFFFFF;
+}
+.team-list:not(:nth-child(4n)) {
+margin-right: 30px;
 }
 .name {
-font-family: var(--primary-font-family);
-font-style: normal;
-font-weight: var(--primary-font-weight);
-font-size: var(--secondary-font-size);
-line-height: 1.19;
-letter-spacing: var(--primary-letter-spacing);
-color: var(--primary-text-color-theme-light);
-
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: var(--primary-font-weight);
+  font-size: var(--secondary-font-size);
+  line-height: 1.19;
+  letter-spacing: var(--primary-letter-spacing);
+  color: var(--primary-text-color-theme-light);
 }
 .position {
   font-weight: normal;
