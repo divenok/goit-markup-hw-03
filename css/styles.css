@@ -64,11 +64,13 @@ img {
   color: var(--accent-color);
 }
 .titel-cat {
+  display: flex;  
+  justify-content: center;
   font-weight: var(--secondary-font-weight);
   font-size: 36px;
   line-height: var(--secondary-line-height);
   margin-bottom: 50px;
-  justify-content: center;
+  
 }
 .section {
   padding-top: 94px;
@@ -146,7 +148,7 @@ margin-right: 50px;
 .hero {
   background-color: var(--secondary-background-color);
 }
-.mein-title {
+.main-title {
   font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: 900;
@@ -163,7 +165,7 @@ margin-right: 50px;
   line-height: 1.88;
   letter-spacing: var(--secondary-letter-spacing);
   min-width: 216px;
-  padding: 10px 20px;
+  padding: 10px 15px;
   border-radius: 4px;
   cursor: pointer;
   color: var(--primary-text-color-theme-dark);
@@ -176,6 +178,18 @@ margin-right: 50px;
 
 .features {
   padding-top: 94px;
+}
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  
+}
+.features-item {
+  
+  margin-left: 30px;
+  margin-top: 30px;
 }
 .features-title {
   font-family: var(--primary-font-family);
@@ -196,9 +210,12 @@ margin-right: 50px;
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
+  margin-top: -30px;
 }
 .work-item {
+  flex-basis: calc((100%-(3*30px))/3);
   margin-left: 30px;
+  margin-top: 30px;
 }
 /* ====== end work and features ====== */
 
@@ -212,15 +229,21 @@ margin-right: 50px;
   padding-bottom: 94px;
   background-color: var(--tertiary-background-color);
 }
+
 .team-list{
   display: flex;
   flex-wrap: wrap;
+  
 }
 .team-item {
+  flex-basis: calc((100%-(4*30px))/4);
   background-color: #FFFFFF;
 }
 .team-item:not(:nth-child(4n)) {
 margin-right: 30px;
+}
+.team-item:not(:nth-last-child(-n+4)) {
+  margin-right: 30px;
 }
 .name {
   font-family: var(--primary-font-family);
@@ -229,16 +252,27 @@ margin-right: 30px;
   font-size: var(--secondary-font-size);
   line-height: 1.19;
   letter-spacing: var(--primary-letter-spacing);
+  margin-bottom: 10px;
   color: var(--primary-text-color-theme-light);
 }
 .position {
   font-weight: normal;
+  margin: 0px;
   color: var(--secondary-text-color-theme-light);
+}
+.team-content-wrapper:nth-child(2n+1) {
+  padding: 30px 70px;
+}
+
+.team-content-wrapper:nth-child(2n) {
+  padding: 30px 62px;
 }
 /* ====== end team ====== */
 /* ====== start footer ====== */
 .footer {
   background-color: var(--secondary-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-secondary-harf-footer,
 .address-post {
