@@ -268,15 +268,19 @@ img {
 /* ====== end team ====== */
 /* ====== start footer ====== */
 .footer {
-  background-color: var(--secondary-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: var(--secondary-background-color);
+}
+.footer-container {
+  display: flex;
+  align-items: center;
 }
 .logo-secondary-harf-footer,
 .address-post {
   color: var(--primary-text-color-theme-dark);
 }
-.addres {
+.address {
   font-style: normal;
 }
 
