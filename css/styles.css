@@ -62,7 +62,6 @@ img {
   font-weight: var(--secondary-font-weight);
   font-size: 26px;
   line-height: 1.19;
-
   color: var(--accent-color);
 }
 .titel-cat {
@@ -112,7 +111,6 @@ img {
   font-size: var(--primary-font-size);
   line-height: var(--primary-line-height);
   letter-spacing: 0.02em;
-
   color: var(--primary-text-color-theme-light);
 }
 .current,
@@ -195,7 +193,6 @@ img {
   margin-top: -30px;
 }
 .features-item {
-  flex-basis: calc((100%-4*30px/4);
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -284,19 +281,9 @@ img {
   padding-bottom: 60px;
   background-color: var(--secondary-background-color);
   }
-.logo-footer {
-  font-family: var(--secondary-font-family);
-  font-weight: var(--secondary-font-weight);
-  font-size: 26px;
-  line-height: 1.19;
-}
-.logo-footer-primary-half {
-  color: var(--accent-color);
-}
-.logo-footer-secondary-half {
+.logo-secondary-half-footer {
   color: var(--primary-text-color-theme-dark); 
 }
-
 .address-post {
   color: var(--primary-text-color-theme-dark);
 }
