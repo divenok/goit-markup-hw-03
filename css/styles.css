@@ -25,7 +25,6 @@ body {
   letter-spacing: var(--primary-letter-spacing);
   color: var(--primary-text-color-theme-light);
   background-color: var(--primary-background-color);
-  
 }
 h1,
 h2,
@@ -146,7 +145,7 @@ img {
 /* ====== start hero ====== */
 .hero {
   background-color: var(--secondary-background-color);
-  
+
   text-align: center;
 }
 .main-title {
@@ -222,7 +221,7 @@ img {
   margin-top: -30px;
 }
 .work-item {
-  flex-basis: calc((100%-(3*30px))/4);
+  flex-basis: calc((100%- (3 * 30px)) / 4);
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -280,9 +279,9 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--secondary-background-color);
-  }
+}
 .logo-secondary-half-footer {
-  color: var(--primary-text-color-theme-dark); 
+  color: var(--primary-text-color-theme-dark);
 }
 .address-post {
   color: var(--primary-text-color-theme-dark);
