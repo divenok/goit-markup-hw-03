@@ -312,7 +312,7 @@ img {
   min-width: 241px;
 }
 .logo-footer-link {
-  
+  margin-top: 0px;
   margin-bottom: 20px;
 }
 .logo-secondary-half-footer {
@@ -321,7 +321,7 @@ img {
 .address {
   font-style: normal;
 }
-.address-item {
+.address-item:not(:last-child) {
   margin-bottom: 9px;
 
   color: var(--primary-text-color-theme-dark);
