@@ -170,8 +170,7 @@ img {
 }
 .modal-btn {
   display: inline-block;
-  margin: 0px;
-  justify-content: space-around;
+  text-align: center;
   min-width: 216px;
   padding: 10px 30px;
   border: 1px solid transparent;
@@ -284,19 +283,19 @@ img {
   
   color: var(--primary-text-color-theme-light);
 }
+
+.team-content-wrapper:nth-child(2n + 1) {
+  padding: 30px 70px;
+}
+.team-content-wrapper:nth-child(2n) {
+  padding: 30px 62px;
+}
 .position {
   margin: 0px;
 
   font-weight: normal;
   
   color: var(--secondary-text-color-theme-light);
-}
-.team-content-wrapper:nth-child(2n + 1) {
-  padding: 30px 70px;
-}
-
-.team-content-wrapper:nth-child(2n) {
-  padding: 30px 62px;
 }
 /* ====== end team ====== */
 /* ====== start footer ====== */
@@ -344,7 +343,19 @@ img {
 /* ====== end page Студія ====== */
 /* ====== start page Портфоліо ====== */
 
+.filters-portfolio-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+.filters-portfolio-item:not(:last-child) {
+  margin-right: 8px;
+}
+ 
 .filters-btn {
+  display: inline-block;
+  min-height: 38px;
+  text-align: center;
   font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: var(--primary-font-weight);
@@ -353,6 +364,8 @@ img {
   letter-spacing: var(--primary-letter-spacing);
   cursor: pointer;
 
+  border: 1px solid #EEEEEE;
+  border-radius: 4px;
   color: var(--primary-text-color-theme-light);
   background: var(--tertiary-background-color);
   
@@ -362,11 +375,29 @@ img {
   color: var(--primary-text-color-theme-dark);
   background: var(--accent-color);
 }
-
+.filters-btn-all {
+  min-width: 73px;
+} 
+.filters-btn-web {
+  min-width: 125px;
+}
+.filters-btn-add {
+  min-width: 112px;
+}
+.filters-btn-diz {
+  min-width: 103px;
+}
+.filters-btn-mrcet {
+  min-width: 130px;
+}
+.projects-portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
 .projects-item {
   background: var(--primary-text-color-theme-dark);
 }
-.project-item-titel {
+.projects-item-titel {
   font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: var(--secondary-font-weight);
@@ -376,7 +407,7 @@ img {
 
   color: var(--primary-text-color-theme-light);
 }
-.project-direction {
+.projects-direction {
   font-size: var(--secondary-font-size);
   line-height: 1.88;
 
