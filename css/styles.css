@@ -306,8 +306,7 @@ img {
 }
 .footer-container {
   display: block;
-  flex-direction: ;
-  min-width: 241px;
+   min-width: 241px;
 }
 .logo-footer-link {
   margin-top: 0px;
